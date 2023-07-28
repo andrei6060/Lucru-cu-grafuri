@@ -1,0 +1,37 @@
+==1299== Invalid write of size 8
+==1299==    at 0x109AAC: main (graph.c:119)
+==1299==  Address 0x4a4a708 is 24 bytes inside an unallocated block of size 4,184,304 in arena "client"
+==1299== 
+==1299== Invalid write of size 8
+==1299==    at 0x109AD2: main (graph.c:120)
+==1299==  Address 0x4a4a710 is 32 bytes inside an unallocated block of size 4,184,304 in arena "client"
+==1299== 
+==1299== Invalid write of size 8
+==1299==    at 0x109E8B: main (graph.c:149)
+==1299==  Address 0x4a4ab70 is 16 bytes after a block of size 16 in arena "client"
+==1299== 
+==1299== Invalid read of size 8
+==1299==    at 0x109E96: main (graph.c:150)
+==1299==  Address 0x4a4ab70 is 16 bytes after a block of size 16 in arena "client"
+==1299== 
+==1299== Invalid read of size 8
+==1299==    at 0x109EB6: main (graph.c:151)
+==1299==  Address 0x4a4ab70 is 16 bytes after a block of size 16 in arena "client"
+==1299== 
+==1299== Invalid write of size 8
+==1299==    at 0x109EC1: main (graph.c:151)
+==1299==  Address 0x4a4abb8 is 24 bytes inside an unallocated block of size 4,183,104 in arena "client"
+==1299== 
+==1299== Invalid read of size 8
+==1299==    at 0x109ECC: main (graph.c:152)
+==1299==  Address 0x4a4ab70 is 16 bytes after a block of size 16 in arena "client"
+==1299== 
+==1299== 168 bytes in 21 blocks are definitely lost in loss record 4 of 7
+==1299==    at 0x483B7F3: malloc (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1299==    by 0x109E80: main (graph.c:149)
+==1299== 
+==1299== 324 (24 direct, 300 indirect) bytes in 1 blocks are definitely lost in loss record 5 of 7
+==1299==    at 0x483B7F3: malloc (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1299==    by 0x109321: initGraph (graph.c:7)
+==1299==    by 0x1099EF: main (graph.c:112)
+==1299== 
